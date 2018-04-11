@@ -6,9 +6,9 @@
 //  Copyright © 2018 cocoaroger. All rights reserved.
 //
 
-#import "ViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface BViewController : ViewController
+@interface BViewController : UIViewController
 
 - (instancetype)initWithText:(NSString *)text;
 
