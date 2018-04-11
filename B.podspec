@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = 'B'
   s.summary      = 'B业务'
-  s.version      = '0.0.1'
+  s.version      = '0.0.2'
   s.homepage     = 'https://github.com/cr-atomic/B'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author             = { 'cocoaroger' => 'coacoaroger@gmail.com' }

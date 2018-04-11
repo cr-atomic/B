@@ -27,7 +27,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"BViewController";
-    [self setupViews];
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:_showLabel];
 }
 
 - (void)viewWillLayoutSubviews {
@@ -36,10 +37,12 @@
     _showLabel.center = self.view.center;
 }
 
-- (void)setupViews {
-    _showLabel = [UILabel new];
-    _showLabel.textColor = [UIColor redColor];
-    [self.view addSubview:_showLabel];
+- (UILabel *)showLabel {
+    if (_showLabel == nil) {
+        _showLabel = [UILabel new];
+        _showLabel.textColor = [UIColor redColor];
+    }
+    return _showLabel;
 }
 
 @end
